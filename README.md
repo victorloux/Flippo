@@ -15,3 +15,7 @@ May or may not work on your term, break your computer, cause alcoholism, make
 you lose your job, steal your husband/wife/significant other.
 
 If it happens, don't say I didn't warn you.
+
+Modifications
+-------------
+This fork is a port of the Ruby script into a standard Bash script.

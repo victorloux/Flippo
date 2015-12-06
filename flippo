@@ -1,27 +1,17 @@
-#!/usr/bin/env ruby
-# encoding: UTF-8
+#!/usr/bin/bash
+reset="\r\033[K"
 
-reset = "\r\e[K"
+function printover {
+	echo -en $reset "$1"
+	sleep 1
+}
 
-STDOUT.sync = true
-print '         ┳━┳     '
-sleep 1
-print reset
-print '°-°)     ┳━┳     '
-sleep 1
-print reset
-print '(ヽ°-°)ヽ┳━┳     '
-sleep 1
-print reset
-print '(╯ °□°）╯︵ ┻━┻  '
-sleep 1
-print reset
-print ' (°-° )     ┻━┻  '
-sleep 1
-print reset
-print '-° )        ┻━┻  '
-sleep 1
-print reset
-print '            ┻━┻  '
-sleep 1
-print "\n"
+printover '         ┳━┳     '
+printover '°-°)     ┳━┳     '
+printover '(ヽ°-°)ヽ┳━┳     '
+printover '(╯ °□°）╯︵ ┻━┻  '
+printover ' (°-° )     ┻━┻  '
+printover '-° )        ┻━┻  '
+printover '            ┻━┻  '
+
+echo -e "\n"
