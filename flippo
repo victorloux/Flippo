@@ -1,8 +1,7 @@
-#!/usr/bin/bash
-reset="\r\033[K"
+#!/bin/bash
 
 function printover {
-	echo -en $reset "$1"
+	echo -en "\r\033[K" "$1"
 	sleep 1
 }
 
